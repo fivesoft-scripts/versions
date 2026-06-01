@@ -1,0 +1,10 @@
+{
+  "version": "1.0.2",
+  "descriptions": [
+    "Animation Sync (Multiplayer): Pet animations are now broadcast to nearby players in real time.",
+    "Server-Side Rate Limiting: Added cooldowns on feed, drink, fetch, sleep, purchases, revive and bury events.",
+    "Pet Name Validation: Names are sanitized on client and server — control chars stripped, 2-50 char limit enforced.",
+    "Auto-Save System: Pet stats are automatically saved to the database every 5 minutes.",
+    "ActivePets Stability Fix: Switching pets no longer overwrites unsaved stats from the previous pet."
+  ]
+}
