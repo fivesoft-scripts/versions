@@ -1,10 +1,9 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "descriptions": [
-    "Animation Sync (Multiplayer): Pet animations are now broadcast to nearby players in real time.",
-    "Server-Side Rate Limiting: Added cooldowns on feed, drink, fetch, sleep, purchases, revive and bury events.",
-    "Pet Name Validation: Names are sanitized on client and server — control chars stripped, 2-50 char limit enforced.",
-    "Auto-Save System: Pet stats are automatically saved to the database every 5 minutes.",
-    "ActivePets Stability Fix: Switching pets no longer overwrites unsaved stats from the previous pet."
+    "The resource now checks for updates on startup and prints a changelog summary in the server console when a new version is available.",
+    "On startup, the resource verifies it is running under the correct folder name (`fs-pets`). If renamed, it will print a security alert and stop itself automatically.",
+    "Three new server-side exports for external script integration — `HasActivePet(src)`, `GetActivePet(src)` and `GetPetStats(src)`. Useful for checking pet state from minigames, events, or any other resource",
+    "Five new client-side exports — `HasActivePet()`, `GetActivePetEntity()`, `GetActivePetData()`, `GetActivePetStats()` and `IsPetSleeping()`. Scripts can now read pet state, grab the ped handle, or check stats without touching fs-pets internals.",
   ]
 }
